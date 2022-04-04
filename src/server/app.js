@@ -13,19 +13,7 @@ app.use(cors());
 
 connectDB(process.env.MONGO_URI)
 
-// const multer = require('multer');
 
-// const storage = multer.diskStorage({
-//     destination: (req, res, cb) => {
-//         cb(null, '../client/src/uploads')
-//     },
-
-//     fileName: (req, file, cb) => {
-//         cb(null, Date.now() + path.extname(file.originalname));
-//     }
-// })
-
-// const upload = multer({storage: storage})
 
 // routes
 app.use(express.json())
